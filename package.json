@@ -1,0 +1,48 @@
+{
+  "name": "@carry0987/eslint-config",
+  "version": "1.0.0",
+  "description": "Unified ESLint configurations for Remix, NestJS and more. Using ESM.",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build:js": "rollup --config rollup.config.ts --configPlugin typescript --environment BUILD:js",
+    "build:dts": "rollup --config rollup.config.ts --configPlugin typescript --environment BUILD:dts",
+    "build": "npm run build:js && npm run build:dts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carry0987/ESLint-Config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "carry0987",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carry0987/ESLint-Config/issues"
+  },
+  "homepage": "https://github.com/carry0987/ESLint-Config#readme",
+  "devDependencies": {
+    "@remix-run/eslint-config": "^2.10.2",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/eslint": "^8.56.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.3",
+    "rollup": "^4.18.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-dts": "^6.1.1"
+  }
+}
