@@ -13,7 +13,7 @@
 ### Installation
 Install the package via `pnpm`:
 ```bash
-pnpm add @carry0987/eslint-config
+pnpm add -D @carry0987/eslint-config
 ```
 
 ### Usage
